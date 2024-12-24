@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+
 /* HEADER */
 
 /* .banner {

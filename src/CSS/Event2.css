@@ -1,0 +1,111 @@
+.first-Section2 {
+    display: flex;
+    background: #2b5d71;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content2 {
+    width: 55%;
+    background: #7dbbd4;
+}
+
+.content2 p {
+    padding: 2em;
+    font-size: 23px;
+}
+
+.Heading2 {
+    background: white;
+    padding: 3em;
+    font-size: 25px;
+}
+
+.Heading2 h2 {
+    color: black;
+}
+
+.imgContainer {
+    width: 45%;
+}
+
+.imgContainer img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .first-Section2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content2, .imgContainer {
+        width: 100%;
+    }
+
+    .Heading2 {
+        padding: 2em;
+    }
+    .imgContainer {
+        order: 1; /* move imgContainer to the top */
+    }
+
+   .content2 {
+        order: 2; /* move content3 below imgContainer */
+    }
+}
+
+/* For screens 576px and below (typical smartphones) */
+@media (max-width: 576px) {
+    .Heading2 {
+        font-size: 12px;
+    }
+
+    .content2 p {
+        font-size: 10px;
+    }
+    .imgContainer {
+        order: 1; /* move imgContainer to the top */
+    }
+
+   .content2{
+        order: 2; /* move content3 below imgContainer */
+    }
+}
+@media (max-width: 556px) {
+    .Heading2 {
+        font-size: 10px;
+    }
+
+    .content2 p {
+        font-size: 12px;
+    }
+    .imgContainer {
+        order: 1; /* move imgContainer to the top */
+    }
+
+   .content2{
+        order: 2; /* move content3 below imgContainer */
+    }
+}
+@media (max-width: 376px) {
+    .Heading2 {
+        font-size: 12px;
+    }
+
+    .content2 p {
+        font-size: 10px;
+    }
+    .imgContainer {
+        order: 1; /* move imgContainer to the top */
+    }
+
+   .content2 {
+        order: 2; /* move content3 below imgContainer */
+    }
+}

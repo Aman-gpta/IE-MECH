@@ -1,4 +1,4 @@
-/* AlumniPage.css */
+/* AlumniPage.css
 
 body {
   font-family: Arial, sans-serif;
@@ -54,8 +54,8 @@ body {
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: #d9d9d9;
   border-radius: 50%;
   margin: 0 auto 15px;
@@ -83,4 +83,82 @@ body {
 
 .contact-icons .linkedin-icon {
   cursor: pointer;
+} */
+
+
+.alumni-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  flex: 1;
+  max-width: calc(33.333% - 20px);
 }
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease;
+}
+
+.alumni-card:hover .profile-pic {
+  transform: scale(1.1);
+}
+
+.alumni-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: white;
+}
+
+.alumni-card p {
+  font-size: 1em;
+  color: #cccccc;
+}
+
+.contact-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-icons a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #000000;
+  transform: scale(1.2);
+}
+
+.contact-icons .icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .alumni-card {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .alumni-card {
+    max-width: 100%;
+  }
+}
+

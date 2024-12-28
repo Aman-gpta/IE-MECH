@@ -66,7 +66,7 @@ const Home = () => {
         <div className='row-2'>
       <div className="col-1">
             <div className="domain_img1">
-            <h1>YEAR <br></br> SNAP <br></br> SHOT <br></br> <span className="arrow-symbol">>>></span></h1>
+            <h1>YEAR <br></br> SNAP <br></br> SHOT <br></br> <span className="arrow-symbol"></span></h1>
             </div>
         </div>
         <div className="col-2">

@@ -9,6 +9,7 @@ import Board from './components/Board';
 import Events from './components/Events';
 import Footer from './components/Footer';
 import EventsPage from './components/EventsPage';
+import AlumniPage from './components/AlumniPage';
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
         />
         {/* Events page route */}
         <Route path="/events" element={<EventsPage />} />
+        {/* Alumni page route */}
+        <Route path="/alumni" element={<AlumniPage />} />
+      
       </Routes>
     </Router>
   );

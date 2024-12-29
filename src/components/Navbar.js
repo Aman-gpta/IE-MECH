@@ -22,6 +22,9 @@ const Navbar = () => {
             <Link to="/events">Events</Link>
           </li>
           <li>
+            <Link to="/alumni">Alumni</Link>
+          </li>
+          <li>
             <a href="#footer">Contact</a>
           </li>
         </ul>

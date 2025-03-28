@@ -182,13 +182,13 @@ const AlumniCard = ({ name, title, email, linkedin, instagram, profilePic }) => 
         <p>{title}</p>
         <div className="contact-icons">
             <a href={`mailto:${email}`} aria-label={`Email ${name}`}>
-                <Mail className="icon" />
+                <email className="icon" />
             </a>
             <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${name}'s LinkedIn profile`}>
-                <Linkedin className="icon" />
+                <linkedin className="icon" />
             </a>
             <a href={instagram} target="_blank" rel="noopener noreferrer" aria-label={`${name}'s Instagram profile`}>
-                <Instagram className="icon" />
+                <instagram className="icon" />
             </a>
         </div>
     </div>
